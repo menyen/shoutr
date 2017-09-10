@@ -31,12 +31,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'clearance'
 gem 'paperclip'
+gem 'sunspot_rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sunspot_solr'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

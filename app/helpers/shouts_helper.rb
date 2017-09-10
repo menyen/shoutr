@@ -14,6 +14,12 @@ module ShoutsHelper
     end
   end
 
+  def delete_button(shout)
+    if shout.user == current_user
+      link_to "Delete", shout_path(shout), method: :delete
+    end
+  end
+
   def autolink(text)
     text.
       gsub(/@\w+/) { |mention| link_to mention, user_path(mention[1..-1]) }.

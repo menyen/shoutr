@@ -8,6 +8,13 @@ class ShoutsController < ApplicationController
     @shout = Shout.find(params[:id])
   end
 
+  def destroy
+    shout = Shout.find(params[:id])
+    shout.content.delete
+    shout.delete
+    redirect_to root_path
+  end
+
   private
 
   def shout_params

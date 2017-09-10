@@ -5,19 +5,19 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.4.1
 
-* System dependencies
+* System dependencies: ImageStick
 
-* Configuration
+* Configuration: Run `bundle` inside project folder, if it does not work, run `gem install bundler` and then `bundle`
 
-* Database creation
+* Database creation: Done by Rails, run `rails db:create`
 
-* Database initialization
+* Database initialization: If `db:create` doesn't work, create a database named `shoutr`
 
-* How to run the test suite
+* How to run the test suite: Run `rspec` inside project folder
 
-* Services (job queues, cache servers, search engines, etc.)
+* Services (job queues, cache servers, search engines, etc.): Run a development instance of Apache Solr: `bundle exec rake sunspot:solr:start`
 
 * Deployment instructions
 
